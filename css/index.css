@@ -176,7 +176,7 @@
 .wave-divider {
   line-height: 0;
   left: 0;
-  margin-top: -25px;
+  margin-top: -28px;
   bottom: -25px;
   position: relative;
   overflow: hidden;
@@ -235,6 +235,22 @@
   width: 100%;
 }
 
+/* Footer Section Divider */
+.footer_wave-divider {
+  line-height: 0;
+  left: 0;
+  margin-bottom: -2rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.footer_wave-divider svg {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
 /* TABLET VIEW */
 @media (min-width: 481px) and (max-width: 1023px) {
   #hero {
@@ -258,8 +274,8 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 60%;
-    max-width: 700px;
+    width: 50%;
+    max-width: 25rem;
     padding-bottom: 0;
     padding-top: 4.5rem;
   }
@@ -301,6 +317,11 @@
     width: 150%;
     max-width: 800px;
   }
+
+  /* Footer Section Divider */
+  .footer_wave-divider {
+    margin-bottom: -3rem;
+  }
 }
 
 /* DESKTOP VIEW */
@@ -325,8 +346,8 @@
   .hero-content img {
     position: absolute;
     bottom: 0;
-    width: 42%;
-    max-width: 700px;
+    width: 50%;
+    max-width: 35rem;
     padding-bottom: 0;
     padding-top: 4.5rem;
   }
@@ -337,6 +358,12 @@
     align-items: center;
     gap: 2rem;
   }
+  #about .about-img {
+    width: 70%;
+  }
+  #about .about-info {
+    width: 60%;
+  }
   /* Services Section */
   #services small::before,
   #services small::after {
@@ -346,7 +373,7 @@
     grid-template-columns: repeat(3, 1fr);
   }
   .services-card .services-info {
-    height: 40%;
+    height: 45%;
   }
   /* Why Choose Us Section */
   #why-choose-us .why-choose-us-content {
@@ -354,10 +381,14 @@
     flex-direction: row;
   }
   #why-choose-us .wcus-info {
-    width: 40%;
+    width: 45%;
   }
   #why-choose-us img {
     width: 150%;
     max-width: 800px;
+  }
+  /* Footer Section Divider */
+  .footer_wave-divider {
+    margin-bottom: -5rem;
   }
 }
